@@ -1,6 +1,13 @@
 # anoop-android
 this folder contains all the android demos anoop has created while learning android.
 
+# folder structure
+- demos
+  - demo1
+  - demo2
+  - ...
+  - demoN
+
 # Topics to cover:
 **Java knowledge of interface, abstract class, threading, runnable.**
 
