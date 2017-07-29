@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anoopp.courtcounter.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TEAM A"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/teamaScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/teama3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="+3 POINTS"
+                android:onClick="add3"/>
+
+            <Button
+                android:id="@+id/teama2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="+2 POINTS"
+                android:onClick="add2"/>
+
+            <Button
+                android:id="@+id/teamaFreethrow"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="FREE THROW"
+                android:onClick="addFreeThrow"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TEAM B"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/teambScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="60sp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/teamb3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="+3 POINTS"
+                android:onClick="add3"/>
+
+            <Button
+                android:id="@+id/teamb2"
+                android:onClick="add2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="+2 POINTS" />
+
+            <Button
+                android:id="@+id/teambFreeThrow"
+                android:onClick="addFreeThrow"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="FREE THROW" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="RESET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="reset"/>
+</LinearLayout>
